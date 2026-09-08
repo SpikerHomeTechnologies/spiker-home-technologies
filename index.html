@@ -173,7 +173,18 @@
     .integration-list{grid-template-columns:1fr}
     .navlinks a:not(.btn){display:none}
     .hero{padding-top:56px}
-    .integration-cta{flex-direction:column;align-items:flex-.digital-card-btn {
+    .integration-cta{flex-direction:column;align-items:flex-start}
+  }
+
+.owner-links {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:16px 0 4px;
+}
+
+.digital-card-btn {
 
   display: inline-block;
 
@@ -193,6 +204,11 @@
 
   transition: all 0.2s ease;
 
+}
+.digital-card-btn.secondary {
+  background:transparent;
+  color:#8de6ee;
+  border:1px solid rgba(141,230,238,.5);
 }
 .digital-card-btn:hover {
   transform: translateY(-2px);
@@ -382,10 +398,11 @@
   <footer>
     <div class="wrap">
       <strong>Travis Spiker</strong>
-      <span class="title">Owner, Engineer, Privacy Advocate, & Your Next Best Friend</div>
-        <a href="travis.html" class="digital-card-btn">
-Digital Business Card
-</a>
+      <span class="title">Owner, Engineer, Privacy Advocate, &amp; Your Next Best Friend</span>
+      <div class="owner-links">
+        <a href="about-travis.html" class="digital-card-btn">More About the Owner</a>
+        <a href="travis.html" class="digital-card-btn secondary">Digital Business Card</a>
+      </div>
     <div style="color:#20c9c9; font-weight:600; margin-top:8px;">Serving the Omaha metro and surrounding areas</div>
       <div class="small">© 2026 Spiker Home Technologies LLC. All rights reserved.</div>
     </div>
