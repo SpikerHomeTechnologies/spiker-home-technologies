@@ -126,6 +126,35 @@
   }
   .integration-note{margin:18px 3px 0;color:#7c8c98;font-size:.85rem}
 
+  /* Unified dashboard showcase */
+  .dashboard-showcase{
+    background:linear-gradient(135deg,#06192f,#0d3557);
+    color:white;
+    overflow:hidden;
+  }
+  .dashboard-grid{
+    display:grid;grid-template-columns:.78fr 1.22fr;gap:46px;align-items:center;
+  }
+  .dashboard-copy h2{
+    color:white;font-size:clamp(2rem,4vw,3.2rem);line-height:1.12;margin:8px 0 18px;
+  }
+  .dashboard-copy p{color:#d4e8ee;margin:0 0 24px;font-size:1.06rem}
+  .dashboard-points{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+  .dashboard-points li{position:relative;padding-left:28px;color:#e8f7f8}
+  .dashboard-points li:before{
+    content:"✓";position:absolute;left:0;top:0;color:#73e0e7;font-weight:900;
+  }
+  .dashboard-visual{position:relative}
+  .dashboard-visual:before{
+    content:"";position:absolute;inset:10% -5%;background:rgba(22,191,208,.18);
+    filter:blur(52px);border-radius:50%;
+  }
+  .dashboard-visual img{
+    position:relative;display:block;width:100%;height:auto;border-radius:22px;
+    box-shadow:0 28px 70px rgba(0,0,0,.4);border:1px solid rgba(141,230,238,.28);
+  }
+  .dashboard-caption{margin:13px 4px 0;color:#9bc4ca;font-size:.8rem;text-align:center}
+
   /* Mission */
   .mission-box{
     background:linear-gradient(135deg,#f1fbfc,#ffffff);
@@ -168,12 +197,15 @@
   .small{font-size:.9rem;color:#96aeb8;margin-top:12px}
 
   @media (max-width:820px){
-    .hero-grid,.contact-grid,.integration-grid{grid-template-columns:1fr}
+    .hero-grid,.contact-grid,.integration-grid,.dashboard-grid{grid-template-columns:1fr}
     .cards,.steps{grid-template-columns:1fr}
     .integration-list{grid-template-columns:1fr}
     .navlinks a:not(.btn){display:none}
     .hero{padding-top:56px}
     .integration-cta{flex-direction:column;align-items:flex-start}
+    .dashboard-copy{text-align:center}
+    .dashboard-points{max-width:520px;margin:0 auto;text-align:left}
+    .dashboard-visual{margin-top:8px}
   }
 
 .owner-links {
@@ -325,6 +357,25 @@
           <div class="integration-badge">Plus many more — just ask</div>
         </div>
         <p class="integration-note">Available integrations and features may vary by device compatibility, network environment, and project requirements.</p>
+      </div>
+    </section>
+
+    <section class="dashboard-showcase" aria-labelledby="dashboard-heading">
+      <div class="wrap dashboard-grid">
+        <div class="dashboard-copy">
+          <span class="eyebrow">One Home. One Simple View.</span>
+          <h2 id="dashboard-heading">Your whole home, right at your fingertips.</h2>
+          <p>Bring cameras, climate, security sensors, garage doors, lighting, outlets, and more into one customized dashboard—designed around your home and the way you live.</p>
+          <ul class="dashboard-points">
+            <li>See live cameras and security status at a glance</li>
+            <li>Control connected devices from your phone or tablet</li>
+            <li>Keep compatible data and video storage under your control</li>
+          </ul>
+        </div>
+        <div class="dashboard-visual">
+          <img src="home-dashboard-showcase.png" alt="Spiker Home Technologies mobile dashboard showing a front-door camera, temperature, door and window sensors, garage, lights, and outlets" loading="lazy" width="1774" height="887">
+          <p class="dashboard-caption">Concept shown. Final dashboards are customized to each home's devices and needs.</p>
+        </div>
       </div>
     </section>
 
