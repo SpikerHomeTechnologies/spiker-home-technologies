@@ -195,7 +195,12 @@
     display:block;width:min(100%,430px);height:auto;margin:auto;
     filter:drop-shadow(0 24px 30px rgba(7,28,53,.2));
   }
-  .protection-copy .eyebrow{color:var(--teal);margin-bottom:10px}
+  .protection-copy .eyebrow{
+    display:block;width:fit-content;color:var(--teal);margin:0 0 10px;
+    text-align:center;
+  }
+  .protection-copy .eyebrow-line{display:block}
+  .protection-copy .eyebrow-tagline{display:block;margin-top:6px}
   .protection-copy h2{
     color:var(--navy);font-size:clamp(2rem,4vw,3.15rem);line-height:1.12;
     margin:0 0 18px;
@@ -464,12 +469,15 @@
       <div class="wrap protection-mark-grid">
         <img class="protection-shield" src="protected-automated-shield.png" alt="Protected and automated by Spiker Home Technologies LLC" loading="lazy" width="1230" height="1278">
         <div class="protection-copy">
-          <span class="eyebrow">The mark of a secure and automated household - The teal means it's FOR REAL!</span>
+          <span class="eyebrow">
+            <span class="eyebrow-line">The mark of a secure and automated household.</span>
+            <span class="eyebrow-tagline">The teal means it’s FOR REAL!</span>
+          </span>
           <h2 id="protection-heading">Protection you can see. Control you can trust.</h2>
           <p>Every completed installation represents a home protected and automated with privacy, reliability, and owner control at its core.</p>
           <div class="decal-note">
             <span class="check" aria-hidden="true">✓</span>
-            <span>Customers receive this shield as a window decal and yard sign after installation — a visible recognition that their home technology was professionally configured and designed around them.</span>
+            <span>Customers receive this shield as a window decal after installation—a visible sign that their home technology was designed around them.</span>
           </div>
         </div>
       </div>
