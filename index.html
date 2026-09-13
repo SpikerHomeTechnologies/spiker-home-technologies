@@ -175,6 +175,31 @@
   }
   .mission-box strong{color:var(--navy)}
 
+  /* Owner statement */
+  .owner-statement{padding-top:0}
+  .owner-statement-card{
+    position:relative;overflow:hidden;
+    background:linear-gradient(135deg,var(--navy),var(--navy2));
+    color:white;border-radius:24px;padding:48px 52px;
+    box-shadow:0 20px 54px rgba(7,28,53,.16);
+  }
+  .owner-statement-card:before{
+    content:"\201C";position:absolute;right:30px;top:-38px;
+    color:rgba(22,191,208,.16);font-family:Georgia,serif;
+    font-size:13rem;line-height:1;font-weight:700;
+  }
+  .owner-statement-label{
+    position:relative;display:inline-block;margin-bottom:16px;
+    color:#8de6ee;font-size:.78rem;font-weight:900;
+    letter-spacing:.12em;text-transform:uppercase;
+  }
+  .owner-statement-card h2{
+    position:relative;margin:0 0 24px;color:white;
+    font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.12;
+  }
+  .owner-statement-copy{position:relative;max-width:900px}
+  .owner-statement-copy p{margin:0 0 17px;color:#dcecf1;font-size:1.05rem}
+  .owner-statement-copy p:last-child{margin-bottom:0}
   /* Process */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .step-num{color:var(--teal);font-weight:900;letter-spacing:.06em;font-size:.8rem;margin-bottom:8px}
@@ -264,6 +289,8 @@
   @media (max-width:480px){
     .partner-card{display:block;text-align:center;padding:24px}
     .partner-mark{margin:0 auto 18px;max-width:200px}
+    .owner-statement-card{padding:36px 26px}
+    .owner-statement-copy p{font-size:1rem}
   }
 
 .owner-links {
@@ -565,6 +592,20 @@
           <div class="contact-box">
             <h3>Email</h3>
             <p><a class="link" href="mailto:spikerhometechnologies@gmail.com">spikerhometechnologies@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="owner-statement" aria-labelledby="owner-statement-heading">
+      <div class="wrap">
+        <div class="owner-statement-card">
+          <span class="owner-statement-label">A Personal Note from Travis</span>
+          <h2 id="owner-statement-heading">Service—not sales.</h2>
+          <div class="owner-statement-copy">
+            <p>I didn’t start Spiker Home Technologies simply to make a sale. I started it because I believe every family deserves to feel safe, comfortable, and confident that their personal data remains under their control.</p>
+            <p>This venture is built around service—not sales. My goal is to listen to your needs, recommend only what genuinely benefits your household, and create dependable solutions that help protect your family, property, and privacy while making everyday life safer and easier.</p>
+            <p>Your trust matters more to me than any transaction. I will always treat your home and your data with the same care and respect that I would want for my own family.</p>
           </div>
         </div>
       </div>
